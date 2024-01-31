@@ -18,6 +18,13 @@ body {
     background: var(--black);
 }
 
+@media screen and (max-width: 950px) {
+    body {
+        font-size: 12px;
+        justify-content: start;
+    }
+}
+
 caption {
     font-size: 1.5em;
     font-weight: bold;
