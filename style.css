@@ -22,6 +22,7 @@ body {
     body {
         font-size: 12px;
         justify-content: start;
+        align-items: start;
     }
 }
 
