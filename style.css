@@ -1,0 +1,76 @@
+:root {
+    --dark: #101318;
+    --gray: #151920;
+    --primary: #42d334;
+    --secondary: #e0e0e0;
+    --white: #fff;
+    --black: #000;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    background: var(--black);
+}
+
+caption {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 1em;
+    color: var(--primary);
+}
+
+table {
+    min-width: 80%;
+    border-collapse: collapse;
+    background-color: var(--gray);
+}
+
+.sched-tm {
+    display: block;
+    font-size: .75em;
+    color: var(--white);
+}
+
+.tc-name {
+    display: block;
+    font-size: .75em;
+    font-weight: bold;
+    color: var(--primary);
+}
+
+th,
+td {
+    padding: .75em .5em;
+    text-align: center;
+    border: 1px solid var(--primary);
+}
+
+th {
+    background-color: var(--dark);
+}
+
+td {
+    background-color: var(--gray);
+    font-size: 1.2rem;
+}
+
+td:not(:has(span)) {
+    background-color: var(--dark);
+    cursor: not-allowed;
+}
+
+td:has(span):hover {
+    background-color: var(--primary);
+    color: var(--black);
+    cursor: pointer;
+}
+
+td:hover .tc-name {
+    color: var(--black);
+}
